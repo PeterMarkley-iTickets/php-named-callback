@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 class GitHubScore
 {
     private $username;
-	private $lookupScore;
+    private $lookupScore;
 	
     private function __construct($username)
     {
@@ -33,7 +33,7 @@ class GitHubScore
     private function score()
     {
         return $this->events()->pluck('type')->map($this->lookupScore)->sum();
-	}
+    }
 	
     private function events()
     {
