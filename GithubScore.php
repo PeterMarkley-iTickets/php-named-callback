@@ -13,16 +13,16 @@ class GitHubScore
     {
         $this->username = $username;
 		
-		$this->lookupScore = function($eventType)
-		{
-			debug_print_backtrace();
-			return collect([
-				'PushEvent' => 5,
-				'CreateEvent' => 4,
-				'IssuesEvent' => 3,
-				'CommitCommentEvent' => 2,
-			])->get($eventType, 1);
-		};
+        $this->lookupScore = function($eventType)
+        {
+            debug_print_backtrace();
+            return collect([
+                'PushEvent' => 5,
+                'CreateEvent' => 4,
+                'IssuesEvent' => 3,
+                'CommitCommentEvent' => 2,
+            ])->get($eventType, 1);
+        };
     }
 	
     public static function forUser($username)
