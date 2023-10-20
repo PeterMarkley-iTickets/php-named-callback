@@ -22,8 +22,8 @@ class GitHubScore
     {
         return $this->events()->pluck('type')->map(function ($eventType) {
             return $this->lookupScore($eventType);
-})->sum();
-	}
+        })->sum();
+    }
 	
     private function events()
     {
@@ -31,9 +31,9 @@ class GitHubScore
         return collect(json_decode('[{"type":"PushEvent"}]', true));
     }
 	
-	private function lookupScore($eventType)
+    private function lookupScore($eventType)
     {
-		debug_print_backtrace();
+        debug_print_backtrace();
         return collect([
             'PushEvent' => 5,
             'CreateEvent' => 4,
