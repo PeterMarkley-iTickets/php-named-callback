@@ -15,6 +15,7 @@ class GitHubScore
 		
 		$this->lookupScore = function($eventType)
 		{
+			debug_print_backtrace();
 			return collect([
 				'PushEvent' => 5,
 				'CreateEvent' => 4,
@@ -36,8 +37,8 @@ class GitHubScore
 	
     private function events()
     {
-        $url = "https://api.github.com/users/{$this->username}/events";
-        return collect(json_decode(file_get_contents($url), true));
+        //$url = "https://api.github.com/users/{$this->username}/events";
+        return collect(json_decode('[{"type":"PushEvent"}]', true));
     }
 }
 
