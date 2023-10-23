@@ -2,6 +2,9 @@
 
 This is an academic excursion into the inner workings of PHP functions and variable types. It demonstrates the closest thing to a named callback function (i.e. not anonymous) that PHP allows.
 
+> **Note**
+> After writing this, I discovered [first-class callable syntax](https://www.php.net/manual/en/functions.first_class_callable_syntax.php), which actually would improve Adam Wathan's example exercise. The following write-up does not incorporate my newfound knowledge of this PHP feature.
+
 ## Background
 
 In Adam Wathan's ebook [_Refactoring to Collections_](https://adamwathan.me/refactoring-to-collections/#packages) v1.1.0 page 85, he solves an example exercise in a way that caught my attention:
