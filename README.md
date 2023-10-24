@@ -5,6 +5,37 @@ This is an academic excursion into the inner workings of PHP functions and varia
 > **Note**
 > After writing this, I discovered [first-class callable syntax](https://www.php.net/manual/en/functions.first_class_callable_syntax.php), which actually would improve Adam Wathan's example exercise. The following write-up does not incorporate my newfound knowledge of this PHP feature. See also [this blog](https://freek.dev/2458-discovering-phps-first-class-callable-syntax) by Freek Van der Herten.
 
+## Installation
+
+Clone this Github repo:
+```
+git clone git@github.com:PeterMarkley-iTickets/php-named-callback.git
+cd php-named-callback
+```
+
+Install dependencies (just [the Collections framework](https://github.com/illuminate/collections)):
+```
+composer install
+```
+
+Run the PHP example code:
+```
+php GitHubScore.php
+```
+
+Or:
+```
+php GitHubScore_FirstClassCallable.php
+```
+
+To compile and run the C example:
+```
+cc -Wall -o mwe mwe.c
+./mwe
+```
+
+To run the Javascript example, simply open `mwe.html` in a browser.
+
 ## Background
 
 In Adam Wathan's ebook [_Refactoring to Collections_](https://adamwathan.me/refactoring-to-collections/#packages) v1.1.0 page 85, he solves an example exercise in a way that caught my attention:
