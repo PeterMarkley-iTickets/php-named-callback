@@ -2,7 +2,7 @@
 
 This is an academic excursion into the inner workings of PHP functions and variable types. It demonstrates the closest thing to a named callback function (i.e. not anonymous) that PHP allows.
 
-> **Note**
+> [!Note]
 > After writing this, I discovered [first-class callable syntax](https://www.php.net/manual/en/functions.first_class_callable_syntax.php), which actually would improve Adam Wathan's example exercise. The following write-up does not incorporate my newfound knowledge of this PHP feature. See also [this blog](https://freek.dev/2458-discovering-phps-first-class-callable-syntax) by Freek Van der Herten.
 
 ## Installation
